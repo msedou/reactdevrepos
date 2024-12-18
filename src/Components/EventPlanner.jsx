@@ -13,9 +13,31 @@ const EventPlanner = () => {
                     birthdays to corporate meetings, we've got you covered.
                 </p>
 
-                <button className='get-sart-button'>Get Sarted</button>
+                <button className='get-started-button'>Get Sarted</button>
             </section>
-            <section className='events_categorie'></section>
+            <section className='events_categories'>
+                <ul>
+                    <h2>Social Events</h2>
+                    <li>
+                        Birthday parties
+                    </li>
+                    <li>
+                        Anniversary celebrations
+                    </li>
+                    <li>
+                        Wedding reception
+                    </li>
+                    <li>
+                        Baby showers
+                    </li>
+                    <li>
+                        Graduation parties
+                    </li>
+                    <li>
+                        Family reunio
+                    </li>
+                </ul>
+            </section>
             <section className='features'></section>
             <section className='testimonials'></section>
             <section className='contact'></section>
