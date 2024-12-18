@@ -87,10 +87,10 @@ const EventPlanner = () => {
                 </form>
             </section>
 
+            <Footer/>
+
         </div>
     );
-
-    <Footer/>
 };
 
 export default EventPlanner;
