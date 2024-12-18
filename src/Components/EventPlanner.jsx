@@ -34,11 +34,38 @@ const EventPlanner = () => {
                         Graduation parties
                     </li>
                     <li>
-                        Family reunio
+                        Family reunions
                     </li>
                 </ul>
+                <ul>
+                    <h2>Entertainment Events :</h2>
+                    <li>Concerts</li>
+                    <li>Music festivals</li>
+                    <li>Film screenings</li>
+                    <li>Comedy shows</li>
+                    <li>Art exhibitions</li>
+                    <li>Cultural events</li>
+                </ul>
+                <ul>
+                    <h2>Community Events :</h2>
+                    <li>Fundraising events</li>
+                    <li>Charity galas</li>
+                    <li>Volunteer drives</li>
+                    <li>Neighborhood block</li>
+                    <li>Community festivals</li>
+                    <li>Cultural celebrations</li>
+                </ul>
             </section>
-            <section className='features'></section>
+            <section className='features'>
+                <h2>Features</h2>
+                <ul>
+                    <li>Easy event creation and management</li>
+                    <li>Customizable event templates</li>
+                    <li>Guest list management</li>
+                    <li>Real-time collaboration</li>
+                    <li>Reminders and notifications</li>
+                </ul>
+            </section>
             <section className='testimonials'></section>
             <section className='contact'></section>
 
