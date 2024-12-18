@@ -7,7 +7,14 @@ const EventPlanner = () => {
             <header>
                 <h1>Welcome to Event Planner</h1>
             </header>
-            <section className='description'></section>
+            <section className='description'>
+                <p>
+                    Plan and organize your events effortlessly with Event Planner. From
+                    birthdays to corporate meetings, we've got you covered.
+                </p>
+
+                <button className='get-sart-button'>Get Sarted</button>
+            </section>
             <section className='events_categorie'></section>
             <section className='features'></section>
             <section className='testimonials'></section>
