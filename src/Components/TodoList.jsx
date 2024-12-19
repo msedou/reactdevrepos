@@ -51,7 +51,15 @@ const TodoList = () => {
         {todos.map((todo,index)=>(
             <div key={index} className='todo-card'>
                 <div className='heading_todo'>
-                    <h3>{todo.heading}</h3> {/* Display the heading here */}
+                    <h3>{todo.heading}</h3>
+                     {/* Display the heading here */}
+                     <ul>
+                        {todo.lists.map((list,listIndex)=>(
+                            <li key={listIndex} className='todo_inside_list'>
+                                <p>{list}</p>
+                            </li>
+                        ))}
+                     </ul>
                     <button className='delete-button-heading' onClick={()=> handleDeleteTodo(index)}>Delete Heading </button>
                 </div>
             </div>
