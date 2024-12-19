@@ -9,7 +9,7 @@ const TodoList = () => {
     const [listInputs, setListInputs] = useState({});
 
 
-    const headleAddTodo =()=>{
+    const handleAddTodo =()=>{
         if(headingInput.trim() !== ''){
             setTodos([...todos,{heading: headingInput,lists:[]}]);
             setHeadingInput('');
