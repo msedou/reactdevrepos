@@ -15,6 +15,21 @@ const TodoList = () => {
             setHeadingInput('');
         }
     };
+
+
+    const handleAddList = (index)=>{
+        if(listInputs[index] && listInputs[index].trim() !== ''){
+            const newTodo = [...todos];
+            newTodo[index].lists.push(listInputs[index]);
+            setTodos(newTodo);
+            setListInputs({...listInputs,[index]: ''});
+        }
+    };
+
+
+    const handleListInputChange=(index,value)=>{
+        setListInputs({...listInputs, [index]: value});
+    };
   
 
   return (
