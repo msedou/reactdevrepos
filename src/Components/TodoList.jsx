@@ -42,6 +42,15 @@ const TodoList = () => {
             </div>
         ))}
       </div>
+      <div className='add_list'>
+        <input 
+            type="text"
+            className='list-input'
+            placeholder='Add List'
+            value={listInputs[index] || ''}
+            onChange={(e)=> handleListInputChange(index,e.target.value)} />
+            <button className='add-list-button' onClick={()=> handleAddList(index)} >Add List</button>
+      </div>
     </>
   );
 };
