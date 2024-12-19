@@ -2,6 +2,19 @@ import React, { useState } from 'react';
 import './FeedbackForm.css'; // Import CSS for styling
 
 const FeedbackForm = () => {
+    const [formData,setFormData] = useState({
+        name:'',
+        email: '',
+        feedback: ''
+    });
+
+    const handleChange = (event) =>{
+        const {name,value} = event.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    }
 
   return (
     <>
