@@ -16,6 +16,28 @@ const FeedbackForm = () => {
         });
     }
 
+    const handleSubbmit = (event) =>{
+        event.preventDefault();
+        const confirmationMessage = `
+        Name: ${formData.name}
+        Email :${formData.email}
+        Feedback: ${formData.feedback}
+        `;
+
+        const isConfirmed = window.confirm(`Please confirm your details:\n\n${confirmationMessage}`);
+        (isConfirmed){
+            console.log('Submitting feedback:', formData);
+            setFormData({
+                name : '',
+                email : '',
+                feedback: ''
+            });
+
+            alert('Thank you for your valuable feedback!');
+        }
+        
+    }
+
   return (
     <>
     <nav>
